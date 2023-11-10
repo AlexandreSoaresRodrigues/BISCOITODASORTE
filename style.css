@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+
+
+main {
+border-radius: .5rem;
+background: #FFF;
+box-shadow: 0px 2rem 5rem 0px rgba(0, 0, 0, 0.80);
+padding: 4.8rem 6.4rem 6.4rem 6.4rem ;
+
+width: min(42.8rem, 90%);
+margin-top: -12rem;
+color: #34355B;
+text-align: center;
+}
+
+
+
+
+
+.screen1 img:hover {
+    animation: tremer 0.3s infinite;
+
+}
+
+@keyframes tremer {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-5px, -5px);
+    }
+    50% {
+      transform: translate(5px, 5px);
+    }
+    75% {
+      transform: translate(-5px, -5px);
+    }
+    100% {
+      transform: translate(5px, 5px);
+    }
+  }
+
+h1 {
+    margin-bottom: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+p {
+  margin-bottom: 2.6rem;
+font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+  
+    
+}
+
+.screen2 {
+  display: grid;
+  gap: 17px;
+}
+
+.screen2 p {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  font-size: 2.4rem;
+  color: #000;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+button {
+    padding: 1.6rem;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 0.4rem;
+    background: #FF9500;
+    color: #FFF;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bf7105;
+}
+
+
+.screen2 p  {
+transform: translateY(15rem) scale(0.1);
+animation: up 2s 1 forwards;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(15rem) scale(0.1);
+  }
+
+  100% {
+    transform: translateY(-0.5rem) scale(1);
+  }
+}
+
+
+.hide {
+  display: none;
+}
+
